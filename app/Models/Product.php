@@ -16,7 +16,8 @@ class Product extends Model
         "description",
         "discountedPrice",
         "mainPrice",
-        "ownerId"
+        "ownerId",
+        "image_url"
     ];
 
     public $timestamps = true;
