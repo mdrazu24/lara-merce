@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('prooducts', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            //
+            $table->integer("phoneNumber")->after("email");
         });
     }
 
@@ -26,6 +26,9 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('prooducts');
+        Schema::table('users', function (Blueprint $table) {
+            //
+            $table->dropColumn(['phoneNumber']);
+        });
     }
 };
