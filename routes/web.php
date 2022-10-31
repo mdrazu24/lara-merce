@@ -23,7 +23,10 @@ Route::get('/', function () {
 Route::get('/products/{id}', function ($id) {
     // get the product
 
-    $product = Product::find($id);
+    $product = Product::find($id)->user;
+
+    var_dump($product);
+
 
     return view('singleproduct', ['product' => $product ]);
 })->name("singleproduct");

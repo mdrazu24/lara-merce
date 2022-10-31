@@ -25,5 +25,8 @@ class Product extends Model
     protected $table = "products";
 
 
+    public function user () {
+        return $this->belongsTo(User::class);
+    }
 
 }
