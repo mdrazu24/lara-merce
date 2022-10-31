@@ -23,6 +23,7 @@ class ProductFactory extends Factory
             'discountedPrice' => rand(100, 999) ,
             'mainPrice' => rand(100, 999), // password
             'ownerId' => 2,
+            'image_url' => fake()->imageUrl(),
         ];
     }
 }
