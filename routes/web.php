@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,5 +21,9 @@ Route::get('/', function () {
 
 
 Route::get('/products/{id}', function ($id) {
-    return view('singleproduct', ['id' => $id ]);
+    // get the product
+
+    $product = Product::find($id);
+
+    return view('singleproduct', ['product' => $product ]);
 })->name("singleproduct");

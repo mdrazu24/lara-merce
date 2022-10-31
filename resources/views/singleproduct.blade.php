@@ -2,5 +2,5 @@
 
 
 @section('content')
-    <p>This is the single product page {{$id}}  </p>
+    <p>{{$product}}</p>
 @endsection

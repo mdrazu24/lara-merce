@@ -47,7 +47,9 @@
                 <div class="col-12 d-flex align-items-center justify-content-center   col-md-2">
                     <p @click="open = ! open" class="d-block d-md-none align-self-end" style="padding: 4px"><i
                             class="fa-solid fa-bars"></i></p>
-                    <img src="images/something.png" alt="something" />
+                            <a href="/">
+                    <img src="{{url('/images/something.png')}}"  alt="something" />
+                    </a>
                 </div>
                 <form class="d-flex col-12 col-md-7 col-lg-6  align-items-center justify-content-center" role="search">
                     <input class="form-control input-lg rounded-pill px-4  " type="search" placeholder="Search..."
