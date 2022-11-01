@@ -25,9 +25,9 @@ Route::get('/products/{id}', function ($id) {
     $product = Product::with(["user" => function ($query) {$query->select("id", "name", "email");}])->where("id", intVal($id))->get();
 
     // dd($product);
-    dd($product->toArray());
+    // dd($product->toArray());
 
 
 
-    return view('singleproduct', ['product' => $product ]);
+    return view('singleproduct', ['product' => $product[0]]);
 })->name("singleproduct");
