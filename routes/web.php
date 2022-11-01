@@ -22,11 +22,10 @@ Route::get('/', function () {
 
 Route::get('/products/{id}', function ($id) {
     // get the product
-
-    $product = Product::find($id);
+    $product = Product::with(["user" => function ($query) {$query->select("id", "name", "email");}])->where("id", intVal($id))->get();
 
     // dd($product);
-    var_dump($product);
+    dd($product->toArray());
 
 
 

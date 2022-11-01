@@ -21,8 +21,8 @@ return new class extends Migration
             $table->longText('description');
             $table->float('mainPrice');
             $table->float('discountedPrice');
-            $table->bigInteger('ownerId')->unsigned();
-            $table->foreign('ownerId')->references('id')->on('users')->onDelete('cascade');
+            $table->bigInteger('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

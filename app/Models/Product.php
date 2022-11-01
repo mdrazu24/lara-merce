@@ -18,7 +18,6 @@ class Product extends Model
         "description",
         "discountedPrice",
         "mainPrice",
-        "ownerId",
         "image_url"
     ];
 
