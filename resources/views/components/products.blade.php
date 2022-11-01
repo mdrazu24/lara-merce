@@ -1,3 +1,5 @@
+@props(['products'])
+
 <div  class="row justify-content-around pb-5 pt-2 ">
     <!-- People find pleasure in different ways. I find it in keeping my mind clear. - Marcus Aurelius -->
     <div class="col-6 col-md-3 overflow-hidden btn d-flex flex-column align-items-center ">
@@ -16,6 +18,8 @@
         <a href="{{ route('singleproduct', ['id'=>2]) }}">Check</a>
 
     </div>
+
+        {{count($products)}}
 
     <div class="col-6 col-md-3 overflow-hidden btn d-flex flex-column align-items-center ">
         <img height="220" width="250" src="images/pro3-2.jpg" alt="products" />

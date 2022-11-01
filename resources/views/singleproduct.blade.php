@@ -13,7 +13,8 @@
         <br/>
         <br/>
         <h4>{{$product->description}}</h4>
-        {{$product}}
+
+        <button class="btn btn-primary" >Buy</button>
 
 
     </div>

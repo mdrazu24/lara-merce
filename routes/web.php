@@ -14,8 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('home');
+
+    $products = Product::all();
+
+
+
+    return view('home', ['products' => $products]);
 });
 
 
