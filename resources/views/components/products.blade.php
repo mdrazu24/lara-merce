@@ -1,6 +1,6 @@
 @props(['products'])
 
-<div  class="row justify-content-around pb-5 pt-2 ">
+<div  class="row justify-content-center pb-5 pt-2 ">
 
     @foreach ($products as $product)
         <div class="col-6 col-md-3 overflow-hidden btn d-flex flex-column align-items-center ">
