@@ -20,8 +20,7 @@ Route::get('/', function () {
     $products = Product::all();
 
 
-
-    return view('home', ['products' => $products]);
+    return view('home', ['products' => $products->toArray()]);
 });
 
 

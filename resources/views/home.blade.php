@@ -8,7 +8,7 @@
             <h1 class="h2">NEW ARRIVALS</h1>
             <p class="btn btn-link">more>></p>
         </div>
-        <x-products products={{$products}} />
+        <x-products products="{{$products}}" />
     </div>
     {{-- Banner --}}
     <div class="container overflow-hidden position-relative mb-4 d-flex align-items-center justify-content-center ">

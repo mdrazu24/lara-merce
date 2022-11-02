@@ -19,8 +19,8 @@
 
     </div>
 
-        {{count($products)}}
-
+        {{-- {{count($products)}} --}}
+        {{$products}}
     <div class="col-6 col-md-3 overflow-hidden btn d-flex flex-column align-items-center ">
         <img height="220" width="250" src="images/pro3-2.jpg" alt="products" />
         <p class="fw-bolder pt-2">Product 3</p>
