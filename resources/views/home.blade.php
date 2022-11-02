@@ -8,7 +8,8 @@
             <h1 class="h2">NEW ARRIVALS</h1>
             <p class="btn btn-link">more>></p>
         </div>
-        <x-products products="{{$products}}" />
+
+        <x-products :products="$products" />
     </div>
     {{-- Banner --}}
     <div class="container overflow-hidden position-relative mb-4 d-flex align-items-center justify-content-center ">
@@ -27,7 +28,7 @@
             <h1 class="h2">TRENDING PRODUCTS</h1>
             <p class="btn btn-link">more>></p>
         </div>
-        <x-products products={{$products}} />
+        <x-products :products="$products" />
     </div>
 
     {{-- Featured Products --}}
@@ -36,10 +37,10 @@
             <h1 class="h2">FEATURED PRODUCTS</h1>
             <p class="btn btn-link">more>></p>
         </div>
-        <x-products products={{$products}}/>
+        <x-products :products="$products"/>
     </div>
     {{-- banner --}}
-       <div class="container overflow-hidden position-relative mb-4 d-flex align-items-center justify-content-center ">
+    <div class="container overflow-hidden position-relative mb-4 d-flex align-items-center justify-content-center ">
         <img height="150"
             src="https://themeshopy.com/demo/advance-ecommerce-store-pro/wp-content/themes/advance-ecommerce-store-pro/assets/images/banner-2.webp"
             alt="banner" />
@@ -57,6 +58,6 @@
         </div>
         {{-- something --}}
 
-        <x-products products={{$products}} />
+        <x-products :products="$products" />
     </div>
 @endsection

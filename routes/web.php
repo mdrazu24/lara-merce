@@ -23,6 +23,19 @@ Route::get('/', function () {
     return view('home', ['products' => $products->toArray()]);
 });
 
+Route::get('/login', function () {
+
+
+
+    return view('login');
+});
+
+Route::get('/signup', function () {
+
+
+
+    return view('signup');
+});
 
 
 Route::get('/products/{id}', function ($id) {

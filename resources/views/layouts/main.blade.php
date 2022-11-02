@@ -63,7 +63,7 @@
                             style="transform: translateX(50%) translateY(-50%)">14</span>
                         <i class="fa-solid fa-cart-shopping fs-5 text-primary "></i>
                     </div>
-                    <a class="btn btn-sm btn-primary">Login / Signup</a>
+                    <a class="btn btn-sm btn-primary" href="/login" >Login / Signup</a>
 
                 </div>
             </div>
