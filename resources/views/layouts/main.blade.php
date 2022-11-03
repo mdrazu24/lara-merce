@@ -44,7 +44,7 @@
 
 
             <div class="row w-100 justify-content-between  ">
-                <div class="col-12 d-flex align-items-center justify-content-center   col-md-2">
+                <div class="col-12  d-flex align-items-center justify-content-center   col-md-2">
                     <p @click="open = ! open" class="d-block d-md-none align-self-end" style="padding: 4px"><i
                             class="fa-solid fa-bars"></i></p>
                             <a href="/">
