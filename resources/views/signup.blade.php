@@ -17,7 +17,7 @@
 
         <div style="height: 400px; width: 400px" >
             <div class="h1 text-center">Signup</div>
-            <form method="POST" action="/login"   class="d-flex flex-column gap-2 " >
+            <form method="POST" action="/signup"   class="d-flex flex-column gap-2 " >
                 @csrf
                 <label for="name">Full Name :</label>
                 <input type="text" name="name" class="form-control" placeholder="John Doe" />
